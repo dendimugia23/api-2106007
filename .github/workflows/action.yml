@@ -54,7 +54,7 @@ jobs:
        "nama": "${{ secrets.NAMA }}",
        "docker_username": "${{ secrets.DOCKER_USERNAME }}"
        }'
-      accept: 1000
+      accept: 200
       log-response: true
 
  
