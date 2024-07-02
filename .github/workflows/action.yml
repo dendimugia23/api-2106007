@@ -40,9 +40,9 @@ jobs:
           headers: '{"Content-Type": "application/json"}'
           params: |
             {
-              "nim": "2106007",
-              "nama": "Dendi Mugia Iklas",
-              "docker_username": "dendimugia23"
+              "nim": "${{ secrets.NIM }}",
+              "nama": "${{ secrets.NAMA }}",
+              "docker_username": "${{ secrets.DOCKER_USERNAME }}"
             }
           accept: 200
           log-response: true
