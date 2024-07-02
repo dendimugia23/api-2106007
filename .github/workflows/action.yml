@@ -56,10 +56,7 @@ jobs:
       accept: 200
       log-response: true
 
-   - name: Use response from API 2
-     run: echo ${{ steps.api2.outputs.response }}
-      accept: 200
-      log-response: true
+ 
 
    - name: Use response from API 2
      run: echo ${{ steps.api2.outputs.response }}
