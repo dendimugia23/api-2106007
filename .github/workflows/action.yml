@@ -1,10 +1,10 @@
-name: push docker
+name: api-2106007
 run-name: ${{ github.actor }} is running ${{ github.workflow }}
 on: [push]
 
 jobs:
  push_to_registry:
-  name: Push Docker image to Docker Hub
+  name: push docker
   runs-on: ubuntu-latest
   steps:
    - name: Check out the repo
