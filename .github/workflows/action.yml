@@ -47,13 +47,14 @@ jobs:
      with:
       url: "http://154.26.139.201:8080/deploy"
       method: "POST"
+      accept: 200, 201
       headers: '{ "Content-Type": "application/json" }'
       params: '{
        "nim": "${{ secrets.NIM }}",
        "nama": "${{ secrets.NAMA }}",
        "docker_username": "${{ secrets.DOCKER_USERNAME }}"
        }'
-      accept: 200
+      accept: 1000
       log-response: true
 
  
